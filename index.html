@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Personal Portfolio</title>
+  <title>YoubRaj Shrestha</title>
 
   <!--
     - favicon
@@ -41,14 +41,45 @@
 
       <div class="sidebar-info">
 
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
-        </figure>
+        <div class="avatar-slider">
+          <div class="slider-container">
+            <div class="slider-wrapper">
+              <div class="slider-track">
+                <div class="slider-slide active">
+                  <img src="./assets/images/image1.png" alt="Slider image 1" class="slider-image" data-image="1">
+                </div>
+                <div class="slider-slide">
+                  <img src="./assets/images/image2.png" alt="Slider image 2" class="slider-image" data-image="2">
+                </div>
+                <div class="slider-slide">
+                  <img src="./assets/images/image3.png" alt="Slider image 3" class="slider-image" data-image="3">
+                </div>
+                <div class="slider-slide">
+                  <img src="./assets/images/image4.png" alt="Slider image 4" class="slider-image" data-image="4">
+                </div>
+                <div class="slider-slide">
+                  <img src="./assets/images/image5.png" alt="Slider image 5" class="slider-image" data-image="5">
+                </div>
+                <div class="slider-slide">
+                  <img src="./assets/images/image6.png" alt="Slider image 6" class="slider-image" data-image="6">
+                </div>
+              </div>
+            </div>
+            <div class="slider-dots">
+              <button class="slider-dot active" data-slide="0"></button>
+              <button class="slider-dot" data-slide="1"></button>
+              <button class="slider-dot" data-slide="2"></button>
+              <button class="slider-dot" data-slide="3"></button>
+              <button class="slider-dot" data-slide="4"></button>
+              <button class="slider-dot" data-slide="5"></button>
+            </div>
+          </div>
+        </div>
 
         <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Richard hanrick</h1>
+          <h1 class="name" title="YoubRaj Shrestha">YoubRaj Shrestha</h1>
 
-          <p class="title">Web developer</p>
+          <p class="title">Hotelier / Entrepreneur</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -74,7 +105,7 @@
             <div class="contact-info">
               <p class="contact-title">Email</p>
 
-              <a href="mailto:richard@example.com" class="contact-link">richard@example.com</a>
+              <a href="mailto:example@example.com" class="contact-link">example@example.com</a>
             </div>
 
           </li>
@@ -88,7 +119,7 @@
             <div class="contact-info">
               <p class="contact-title">Phone</p>
 
-              <a href="tel:+12133522795" class="contact-link">+1 (213) 352-2795</a>
+              <a href="tel:+9779840126152" class="contact-link">+977 9840126152</a>
             </div>
 
           </li>
@@ -116,7 +147,7 @@
             <div class="contact-info">
               <p class="contact-title">Location</p>
 
-              <address>Sacramento, California, USA</address>
+              <address>Kathmandu, Nepal</address>
             </div>
 
           </li>
@@ -128,19 +159,13 @@
         <ul class="social-list">
 
           <li class="social-item">
-            <a href="#" class="social-link">
+            <a href="https://www.facebook.com/youbraj.shrestha.79" class="social-link" target="_blank">
               <ion-icon name="logo-facebook"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
+            <a href="https://www.instagram.com/youbraj_shrestha/" class="social-link" target="_blank">
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
           </li>
@@ -208,19 +233,30 @@
         </header>
 
         <section class="about-text">
-          <p>
-            I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
-            I enjoy
-            turning complex problems into simple, beautiful and intuitive designs.
-          </p>
+          <div class="about-content" id="aboutContent">
+            <p>
+              I am the Managing Director and founder of Hotel Crown Plaza since its inception. Over the past 10 years, I have successfully established Plaza Group as the leading Hotel Chain in Nepal, with multiple properties across the country.
+            </p>
 
-          <p>
-            My job is to build your website so that it is functional and user-friendly but at the same time attractive.
-            Moreover, I
-            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
-            across your
-            message and identity in the most creative way. I created web design for many famous brand companies.
-          </p>
+            <p>
+              I hold various leadership roles in industry associations and serve as Vice President of Kathmandu District Football Association, executive member of Hotel Association of Nepal, and Director at Himchuli Academy. I am also the Chairman of AYB Foundation, focusing on charitable initiatives and community development.
+            </p>
+
+            <div class="about-text-expanded" id="aboutTextExpanded" style="display: none;">
+              <p>
+                As a socially responsible hotelier, my contributions have been recognized by national and international organizations. I focus on building libraries, helping rural communities with economic reforms, and providing relief during natural catastrophes.
+              </p>
+
+              <p>
+                I am not just your host at Hotel Crown Plaza and Plaza group of hotels but an exceptionally kind-hearted hospitable person.
+              </p>
+            </div>
+          </div>
+
+          <button class="show-more-btn" id="showMoreBtn">
+            <span>Show More</span>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
         </section>
 
 
@@ -234,18 +270,19 @@
 
           <ul class="service-list">
 
+
+
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
+                <img src="./assets/images/entrepreneur.png" alt="entrepreneur icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
+                <h4 class="h4 service-item-title">Entrepreneur</h4>
 
                 <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
+                  Building and scaling successful businesses across multiple industries.
                 </p>
               </div>
 
@@ -254,14 +291,14 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+                <img src="./assets/images/medical.png" alt="medical icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
+                <h4 class="h4 service-item-title">Medical Industry</h4>
 
                 <p class="service-item-text">
-                  High-quality development of sites at the professional level.
+                  Investing in healthcare innovation and medical technology solutions.
                 </p>
               </div>
 
@@ -270,14 +307,14 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+                <img src="./assets/images/hotel.png" alt="hospitality icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
+                <h4 class="h4 service-item-title">Hospitality Industry</h4>
 
                 <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
+                  Expanding hospitality ventures and creating exceptional guest experiences.
                 </p>
               </div>
 
@@ -286,14 +323,14 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+                <img src="./assets/images/transport.png" alt="travel icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
+                <h4 class="h4 service-item-title">Tours & Travels</h4>
 
                 <p class="service-item-text">
-                  I make high-quality photos of any category at a professional level.
+                  Curating unforgettable travel experiences and adventure tourism packages.
                 </p>
               </div>
 
@@ -305,151 +342,74 @@
 
 
         <!--
-          - testimonials
+          - gallery
         -->
 
-        <section class="testimonials">
+        <section class="gallery">
 
-          <h3 class="h3 testimonials-title">Testimonials</h3>
+          <h3 class="h3 gallery-title">Gallery</h3>
 
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
+          <div class="gallery-container">
+            <div class="gallery-slider">
+              <div class="gallery-track">
+                <div class="gallery-slide active" data-gallery-slide="0">
+                  <img src="./assets/images/gimage1.jpg" alt="Gallery image 1" class="gallery-image" data-gallery-image>
                 </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
+                <div class="gallery-slide" data-gallery-slide="1">
+                  <img src="./assets/images/gimage2.jpg" alt="Gallery image 2" class="gallery-image" data-gallery-image>
                 </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
+                <div class="gallery-slide" data-gallery-slide="2">
+                  <img src="./assets/images/gimage3.jpg" alt="Gallery image 3" class="gallery-image" data-gallery-image>
                 </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
+                <div class="gallery-slide" data-gallery-slide="3">
+                  <img src="./assets/images/gimage4.jpg" alt="Gallery image 4" class="gallery-image" data-gallery-image>
                 </div>
-
+                <div class="gallery-slide" data-gallery-slide="4">
+                  <img src="./assets/images/gimage5.jpg" alt="Gallery image 5" class="gallery-image" data-gallery-image>
+                </div>
+                <div class="gallery-slide" data-gallery-slide="5">
+                  <img src="./assets/images/gimage6.jpg" alt="Gallery image 6" class="gallery-image" data-gallery-image>
+                </div>
+                <div class="gallery-slide" data-gallery-slide="6">
+                  <img src="./assets/images/gimage7.jpg" alt="Gallery image 7" class="gallery-image" data-gallery-image>
+                </div>
+                <div class="gallery-slide" data-gallery-slide="7">
+                  <img src="./assets/images/gimage8.jpg" alt="Gallery image 8" class="gallery-image" data-gallery-image>
+                </div>
+                <div class="gallery-slide" data-gallery-slide="8">
+                  <img src="./assets/images/gimage9.jpg" alt="Gallery image 9" class="gallery-image" data-gallery-image>
+                </div>
               </div>
-            </li>
-
-          </ul>
+            </div>
+            
+            <div class="gallery-controls">
+              <button class="gallery-btn gallery-prev" data-gallery-prev>
+                <ion-icon name="chevron-back-outline"></ion-icon>
+              </button>
+              <button class="gallery-btn gallery-next" data-gallery-next>
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+              </button>
+            </div>
+            
+            <div class="gallery-dots">
+              <button class="gallery-dot active" data-gallery-dot="0"></button>
+              <button class="gallery-dot" data-gallery-dot="1"></button>
+              <button class="gallery-dot" data-gallery-dot="2"></button>
+              <button class="gallery-dot" data-gallery-dot="3"></button>
+              <button class="gallery-dot" data-gallery-dot="4"></button>
+              <button class="gallery-dot" data-gallery-dot="5"></button>
+              <button class="gallery-dot" data-gallery-dot="6"></button>
+              <button class="gallery-dot" data-gallery-dot="7"></button>
+              <button class="gallery-dot" data-gallery-dot="8"></button>
+            </div>
+          </div>
 
         </section>
 
 
-        <!--
-          - testimonials modal
-        -->
 
-        <div class="modal-container" data-modal-container>
 
-          <div class="overlay" data-overlay></div>
 
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
-        </div>
 
 
         <!--
@@ -458,43 +418,55 @@
 
         <section class="clients">
 
-          <h3 class="h3 clients-title">Clients</h3>
+          <h3 class="h3 clients-title">My Ventures</h3>
 
           <ul class="clients-list has-scrollbar">
 
             <li class="clients-item">
               <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
+                <img src="./assets/images/logo1.png" alt="client logo">
               </a>
             </li>
 
             <li class="clients-item">
               <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
+                <img src="./assets/images/logo2.png" alt="client logo">
               </a>
             </li>
 
             <li class="clients-item">
               <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
+                <img src="./assets/images/logo3.png" alt="client logo">
               </a>
             </li>
 
             <li class="clients-item">
               <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
+                <img src="./assets/images/logo4.png" alt="client logo">
               </a>
             </li>
 
             <li class="clients-item">
               <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
+                <img src="./assets/images/logo5.png" alt="client logo">
               </a>
             </li>
 
             <li class="clients-item">
               <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
+                <img src="./assets/images/logo6.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo7.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo8.png" alt="client logo">
               </a>
             </li>
 
@@ -522,51 +494,58 @@
 
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <ion-icon name="business-outline"></ion-icon>
             </div>
 
-            <h3 class="h3">Education</h3>
+            <h3 class="h3">Managing Director</h3>
           </div>
 
           <ol class="timeline-list">
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">University school of the arts</h4>
+              <h4 class="h4 timeline-item-title">Hotel Crown Plaza</h4>
 
-              <span>2007 — 2008</span>
+              <span>2010 — till now</span>
 
               <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
+                Leading the flagship property of Plaza Group with excellence in hospitality management and guest services.
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">New york academy of art</h4>
+              <h4 class="h4 timeline-item-title">Hotel Shivam Plaza</h4>
 
-              <span>2006 — 2007</span>
+              <span>2010 — till now</span>
 
               <p class="timeline-text">
-                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
-                omnis..
+                Managing operations and strategic direction for this key property in the Plaza Group portfolio.
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">High school of art and design</h4>
+              <h4 class="h4 timeline-item-title">Hotel Prince Plaza</h4>
 
-              <span>2002 — 2004</span>
+              <span>2015 — Till Now</span>
 
               <p class="timeline-text">
-                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
-                magni dolores
-                eos.
+                Overseeing the development and management of this premium hotel property.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Airport Budget Hotel</h4>
+
+              <span>Ongoing</span>
+
+              <p class="timeline-text">
+                Managing budget-friendly accommodation solutions for travelers.
               </p>
 
             </li>
@@ -579,52 +558,118 @@
 
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <ion-icon name="briefcase-outline"></ion-icon>
             </div>
 
-            <h3 class="h3">Experience</h3>
+            <h3 class="h3">Chairman</h3>
           </div>
 
           <ol class="timeline-list">
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Creative director</h4>
+              <h4 class="h4 timeline-item-title">Plaza Group and Company</h4>
 
-              <span>2015 — Present</span>
+              <span>Current</span>
 
               <p class="timeline-text">
-                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
-                molestias
-                exceptur.
+                Leading the strategic direction and growth of the entire Plaza Group portfolio.
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Art director</h4>
+              <h4 class="h4 timeline-item-title">Plaza Hotel Group</h4>
 
-              <span>2013 — 2015</span>
+              <span>Current</span>
 
               <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
+                Overseeing the hotel division with focus on quality and expansion.
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Web designer</h4>
+              <h4 class="h4 timeline-item-title">Divine Healthcare Pvt. Ltd.</h4>
 
-              <span>2010 — 2013</span>
+              <span>Current</span>
 
               <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
+                Leading healthcare initiatives and medical service delivery.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Asian Health Supply</h4>
+
+              <span>Current</span>
+
+              <p class="timeline-text">
+                Managing healthcare supply chain and distribution networks.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">RARA Intercontinental</h4>
+
+              <span>Current</span>
+
+              <p class="timeline-text">
+                Leading international business ventures and partnerships.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Horizon Overseas</h4>
+
+              <span>Current</span>
+
+              <p class="timeline-text">
+                Managing overseas business operations and international expansion.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Plaza Agro Farm</h4>
+
+              <span>Current</span>
+
+              <p class="timeline-text">
+                Overseeing agricultural initiatives and sustainable farming practices.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Humility Tour & Travels</h4>
+
+              <span>Current</span>
+
+              <p class="timeline-text">
+                Leading tourism and travel service operations.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">AYB Foundation</h4>
+
+              <span>Current</span>
+
+              <p class="timeline-text">
+                Chairing charitable foundation focused on community development and social welfare.
               </p>
 
             </li>
@@ -633,67 +678,147 @@
 
         </section>
 
-        <section class="skill">
+        <section class="timeline">
 
-          <h3 class="h3 skills-title">My skills</h3>
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="people-outline"></ion-icon>
+            </div>
 
-          <ul class="skills-list content-card">
+            <h3 class="h3">Director</h3>
+          </div>
 
-            <li class="skills-item">
+          <ol class="timeline-list">
 
-              <div class="title-wrapper">
-                <h5 class="h5">Web design</h5>
-                <data value="80">80%</data>
-              </div>
+            <li class="timeline-item">
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
+              <h4 class="h4 timeline-item-title">Himchuli Academy</h4>
 
-            </li>
+              <span>Current</span>
 
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Graphic design</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
+              <p class="timeline-text">
+                Providing leadership in educational excellence and academic development.
+              </p>
 
             </li>
 
-            <li class="skills-item">
+            <li class="timeline-item">
 
-              <div class="title-wrapper">
-                <h5 class="h5">Branding</h5>
-                <data value="90">90%</data>
-              </div>
+              <h4 class="h4 timeline-item-title">Soaltee Westend Resort Chitwan by RRGR</h4>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
+              <span>Current</span>
 
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">WordPress</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
+              <p class="timeline-text">
+                Contributing to luxury resort management and tourism development.
+              </p>
 
             </li>
 
-          </ul>
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Godawari Forest Hotel</h4>
+
+              <span>Current</span>
+
+              <p class="timeline-text">
+                Leading eco-tourism initiatives and forest conservation projects.
+              </p>
+
+            </li>
+
+          </ol>
 
         </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Association Roles</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Nepal Volleyball Association</h4>
+
+              <span>Vice President</span>
+
+              <p class="timeline-text">
+                Leading volleyball development and promoting sports excellence in Nepal.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Hotel Association Nepal</h4>
+
+              <span>Treasurer</span>
+
+              <p class="timeline-text">
+                Managing financial oversight and strategic planning for the hotel industry association.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">FNCCI Employer Council</h4>
+
+              <span>Member</span>
+
+              <p class="timeline-text">
+                Contributing to employer-employee relations and labor policy development.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">FNCCI Tourism Committee</h4>
+
+              <span>Member</span>
+
+              <p class="timeline-text">
+                Advising on tourism policy and industry development strategies.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Chambers of Commerce Tourism Committee</h4>
+
+              <span>Member</span>
+
+              <p class="timeline-text">
+                Supporting tourism business development and commercial partnerships.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Kathmandu District Football Association</h4>
+
+              <span>Senior Vice President</span>
+
+              <p class="timeline-text">
+                Leading football development initiatives and youth sports programs in Kathmandu district.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+
 
       </article>
 
@@ -720,15 +845,23 @@
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Web design</button>
+              <button data-filter-btn>City Hotels</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Applications</button>
+              <button data-filter-btn>Healthcare</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Web development</button>
+              <button data-filter-btn>Travel & Tourism</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Overseas</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Agriculture</button>
             </li>
 
           </ul>
@@ -752,15 +885,23 @@
               </li>
 
               <li class="select-item">
-                <button data-select-item>Web design</button>
+                <button data-select-item>City Hotels</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Applications</button>
+                <button data-select-item>Healthcare</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Web development</button>
+                <button data-select-item>Travel & Tourism</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Overseas</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Agriculture</button>
               </li>
 
             </ul>
@@ -769,164 +910,114 @@
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item  active" data-filter-item data-category="city hotels">
               <a href="#">
 
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                  <img src="./assets/images/logo1.png" alt="Plaza Group" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Finance</h3>
+                <h3 class="project-title">Plaza Group</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">City Hotel</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item  active" data-filter-item data-category="city hotels">
               <a href="#">
 
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                  <img src="./assets/images/logo2.png" alt="Hotel Prince Plaza" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Orizon</h3>
+                <h3 class="project-title">Hotel Prince Plaza</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">City Hotel</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <li class="project-item  active" data-filter-item data-category="healthcare">
               <a href="#">
 
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                  <img src="./assets/images/logo3.png" alt="Divine Healthcare" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Fundo</h3>
+                <h3 class="project-title">Divine Healthcare</h3>
 
-                <p class="project-category">Web design</p>
+                <p class="project-category">Medicine Producing Company</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
+            <li class="project-item  active" data-filter-item data-category="travel tourism">
               <a href="#">
 
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                  <img src="./assets/images/logo4.png" alt="RARA Intercontinental" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Brawlhalla</h3>
+                <h3 class="project-title">RARA Intercontinental</h3>
 
-                <p class="project-category">Applications</p>
+                <p class="project-category">Travel Company</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <li class="project-item  active" data-filter-item data-category="city hotels">
               <a href="#">
 
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                  <img src="./assets/images/logo5.png" alt="Airport Budget Hotel" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">DSM.</h3>
+                <h3 class="project-title">Airport Budget Hotel</h3>
 
-                <p class="project-category">Web design</p>
+                <p class="project-category">City Hotel</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <li class="project-item  active" data-filter-item data-category="travel tourism">
               <a href="#">
 
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                  <img src="./assets/images/logo6.png" alt="Humanity Travel and Tour" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">MetaSpark</h3>
+                <h3 class="project-title">Humanity Travel and Tour</h3>
 
-                <p class="project-category">Web design</p>
+                <p class="project-category">Travel Company</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item  active" data-filter-item data-category="overseas">
               <a href="#">
 
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                  <img src="./assets/images/logo7.png" alt="Horizon Overseas" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Summary</h3>
+                <h3 class="project-title">Horizon Overseas</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">Overseas Company</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
+            <li class="project-item  active" data-filter-item data-category="agriculture">
               <a href="#">
 
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                  <img src="./assets/images/logo8.png" alt="Plaza Agro Farm" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Task Manager</h3>
+                <h3 class="project-title">Plaza Agro Farm</h3>
 
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
+                <p class="project-category">Agro Farm</p>
 
               </a>
             </li>
@@ -1146,8 +1237,8 @@
         <section class="mapbox" data-mapbox>
           <figure>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2851.464478815017!2d85.328293!3d27.713066999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb190ebcd2eb45%3A0x2f49bdab4e38d4ce!2sHotel%20Crown%20Plaza%20-Naxal!5e1!3m2!1sen!2sin!4v1756406657029!5m2!1sen!2sin"
+              width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </figure>
         </section>
 
@@ -1180,10 +1271,15 @@
 
   </main>
 
-
-
-
-
+  <!-- Image Overlay -->
+  <div class="image-overlay" id="imageOverlay">
+    <div class="overlay-content">
+      <button class="overlay-close-btn" id="overlayCloseBtn">
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+      <img src="" alt="Full size image" class="overlay-image" id="overlayImage">
+    </div>
+  </div>
 
   <!--
     - custom js link
