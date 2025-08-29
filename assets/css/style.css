@@ -841,7 +841,7 @@ main {
 }
 
 .gallery-dots {
-  display: flex;
+  display: none; /* Hide dots visually but keep them in DOM for JavaScript functionality */
   justify-content: center;
   gap: 8px;
   margin-top: 20px;
